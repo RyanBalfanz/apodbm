@@ -1,0 +1,4 @@
+APOD_HOME=$HOME/.apod
+
+alias update_apod=$APOD_HOME/apod.py
+update_apod >> $APOD_HOME/log &
