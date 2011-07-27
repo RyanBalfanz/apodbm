@@ -1,0 +1,6 @@
+APOD
+====
+
+git clone
+cd apod
+make install && make
