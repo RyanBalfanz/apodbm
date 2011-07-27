@@ -8,6 +8,12 @@ Add a new folder by clicking the add folder button.
 Navigate to the ~/.apod directory by dragging the Finder proxy icon to the Add Folder panel.
 Select the 'Astronomy_Picture_of_the_Day' file.
 
+Optionally, you may also wish to do automate some things. Enable timed background changing?
+
+Source .apodrc in your .bash_profile.
+Open Terminal, or resource your .bash_profile.
+Set Terminal to open at login.
+
 To uninstall on OS X
 ====================
 
