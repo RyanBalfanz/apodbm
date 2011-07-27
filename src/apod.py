@@ -63,6 +63,11 @@ class AstronomyPictureOfTheDay(PictureOfTheDay):
 		self.html = urllib2.urlopen(self.url).read()
 		return self.html
 		
+	def open_apod_in_browser(self):
+		"""docstring for open_apod_in_browser"""
+		import webbrowser
+		webbrowser.open_new_tab(self.url)
+		
 class PictureOfTheDayTests(unittest.TestCase):
 	def setUp(self):
 		self.flavors = {
@@ -90,5 +95,6 @@ if __name__ == '__main__':
 	apod = AstronomyPictureOfTheDay()
 	# print apod.get_apod_url()
 	# print apod.get_apod_html()
+	# apod.open_apod_in_browser()
 	print apod.get_apod()
 	
