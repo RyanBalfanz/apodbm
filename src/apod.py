@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 """
-untitled.py
+apod.py
 
 Created by Balfanz, Ryan on 2011-07-25.
 Copyright (c) 2011 __MyCompanyName__. All rights reserved.
@@ -31,6 +31,7 @@ class AstronomyPictureOfTheDay(PictureOfTheDay):
 		self.url = "http://apod.nasa.gov/apod/astropix.html"
 		self.html = None
 		self.src = None
+		self.img = None
 		
 	def get_apod(self):
 		"""docstring for get_apod"""
@@ -43,8 +44,7 @@ class AstronomyPictureOfTheDay(PictureOfTheDay):
 			
 		assert self.html
 			
-		html = self.html
-		soup = BeautifulSoup(html)
+		soup = BeautifulSoup(self.html)
 		src = soup.findAll("img")[0]["src"]
 		srcUrl = "/".join([self.url[:len(self.url)-self.url[::-1].index("/")], src])
 		self.img = urllib2.urlopen(srcUrl).read()
