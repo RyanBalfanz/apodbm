@@ -1,0 +1,4 @@
+APODBM_HOME=$HOME/.apodbm
+
+alias update_apod=$APODBM_HOME/apodbm.py
+update_apod >> $APODBM_HOME/log &

@@ -1,5 +1,5 @@
-APOD
-====
+APODBM
+======
 
 Installation
 ------------
@@ -7,5 +7,5 @@ Installation
 For more information see the INSTALL file.
 
 git clone git://github.com/RyanBalfanz/apodbm.git
-cd apod
+cd apodbm
 make install && make
